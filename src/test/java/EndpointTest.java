@@ -53,7 +53,7 @@ public class EndpointTest {
     }
 
     @Test
-    public void TestKillSessionEndpoint_Should_restrieve200() throws IOException {
+    public void TestKillSessionEndpoint_Should_return200() throws IOException {
         String urlInit = url+  "/killSession/";
         URL urlInitSession = new URL(urlInit);
         String sessionToken2 = glpiApiCall.getSessionToken();
@@ -66,8 +66,23 @@ public class EndpointTest {
 
         assertEquals(response.getStatusCode(), HttpURLConnection.HTTP_OK);
     }
+
     @Test
-    public void TestGetMyProfilesEndpoint_Should_restrieve200() throws IOException {
+    public void TestUpdateItemEndpoint_Should_return200() throws IOException {
+        String urlInit = url+  "/Ticket/" + idTicket;
+        URL urlInitSession = new URL(urlInit);
+        String body = "{\"input\": {\"name\": \"titre mis a jour\"}}";
+        WebResponse response = glpiApiCall.sendHttpRequest(urlInitSession, HttpMethod.PUT,
+                "9dCPK2HR6Hck118pXe9Kz6xHfh9vuVmF8NxRRMZW",
+                null,
+                sessionToken, body, "application/json", null,
+                "application/json",
+                HttpURLConnection.HTTP_OK, null);
+
+        assertEquals(response.getStatusCode(), HttpURLConnection.HTTP_OK);
+    }
+    @Test
+    public void TestGetMyProfilesEndpoint_Should_return200() throws IOException {
         String urlInit = url+  "/getMyProfiles/";
         URL urlInitSession = new URL(urlInit);
         WebResponse response = glpiApiCall.sendHttpRequest(urlInitSession, HttpMethod.GET,
@@ -81,7 +96,7 @@ public class EndpointTest {
     }
 
     @Test
-    public void TestGetMyEntitiesEndpoint_Should_restrieve200() throws IOException {
+    public void TestGetMyEntitiesEndpoint_Should_return200() throws IOException {
         String urlInit = url+  "/getMyEntities/";
         URL urlInitSession = new URL(urlInit);
         WebResponse response = glpiApiCall.sendHttpRequest(urlInitSession, HttpMethod.GET,
@@ -95,7 +110,7 @@ public class EndpointTest {
     }
 
     @Test
-    public void TestActiveEntitiesEndpoint_Should_restrieve200() throws IOException {
+    public void TestActiveEntitiesEndpoint_Should_return200() throws IOException {
         String urlInit = url+  "/getActiveEntities/";
         URL urlInitSession = new URL(urlInit);
         WebResponse response = glpiApiCall.sendHttpRequest(urlInitSession, HttpMethod.GET,
@@ -109,7 +124,7 @@ public class EndpointTest {
     }
 
     @Test
-    public void TestFullSessionEndpoint_Should_restrieve200() throws IOException {
+    public void TestFullSessionEndpoint_Should_return200() throws IOException {
         String urlInit = url+  "/getFullSession/";
         URL urlInitSession = new URL(urlInit);
         WebResponse response = glpiApiCall.sendHttpRequest(urlInitSession, HttpMethod.GET,
@@ -123,7 +138,7 @@ public class EndpointTest {
     }
 
     @Test
-    public void TestGlpiConfigEndpoint_Should_restrieve200() throws IOException {
+    public void TestGlpiConfigEndpoint_Should_return200() throws IOException {
         String urlInit = url+  "/getGlpiConfig/";
         URL urlInitSession = new URL(urlInit);
         WebResponse response = glpiApiCall.sendHttpRequest(urlInitSession, HttpMethod.GET,
@@ -138,7 +153,7 @@ public class EndpointTest {
 
 
     @Test
-    public void TestGetMassiveActionsEndpoint_Should_restrieve200() throws IOException {
+    public void TestGetMassiveActionsEndpoint_Should_return200() throws IOException {
         String urlInit = url+  "/getMassiveActions/Ticket/";
         URL urlInitSession = new URL(urlInit);
         WebResponse response = glpiApiCall.sendHttpRequest(urlInitSession, HttpMethod.GET,

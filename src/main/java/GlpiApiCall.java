@@ -234,17 +234,6 @@ public class GlpiApiCall implements GlpiOperations{
         }
     }
 
-    public List<Integer> getTableauIDListeTicket(String listeTicketPresent){
-        List<Integer> tableauIdTickets = new ArrayList<>();
-        JSONArray listeTicket = new JSONArray(listeTicketPresent);
-        for (int i = 0; i < listeTicket.length(); i++) {
-            JSONObject ticket = listeTicket.getJSONObject(i);
-            int id = ticket.getInt("id");
-            tableauIdTickets.add(id);
-            System.out.println(ticket.getInt("id"));
-        }
-        return tableauIdTickets;
-    }
     public String findJsonString(WebResponse response, String key){
         JSONObject jsonObject = getJsonObject(response);
         String find = jsonObject.getString(key);
