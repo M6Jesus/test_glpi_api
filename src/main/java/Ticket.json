@@ -1,0 +1,110 @@
+{
+  "id": 4,
+  "entities_id": 0,
+  "name": "Ticket pamela",
+  "date": "2023-03-30 21:34:40",
+  "closedate": null,
+  "solvedate": null,
+  "takeintoaccountdate": null,
+  "date_mod": "2023-03-30 21:34:40",
+  "users_id_lastupdater": 2,
+  "status": 1,
+  "users_id_recipient": 2,
+  "requesttypes_id": 1,
+  "content": "ceci est le ticket de pamela",
+  "urgency": 1,
+  "impact": 3,
+  "priority": 2,
+  "itilcategories_id": 0,
+  "type": 1,
+  "global_validation": 1,
+  "slas_id_ttr": 0,
+  "slas_id_tto": 0,
+  "slalevels_id_ttr": 0,
+  "time_to_resolve": null,
+  "time_to_own": null,
+  "begin_waiting_date": null,
+  "sla_waiting_duration": 0,
+  "ola_waiting_duration": 0,
+  "olas_id_tto": 0,
+  "olas_id_ttr": 0,
+  "olalevels_id_ttr": 0,
+  "ola_ttr_begin_date": null,
+  "internal_time_to_resolve": null,
+  "internal_time_to_own": null,
+  "waiting_duration": 0,
+  "close_delay_stat": 0,
+  "solve_delay_stat": 0,
+  "takeintoaccount_delay_stat": 0,
+  "actiontime": 0,
+  "is_deleted": 0,
+  "locations_id": 0,
+  "validation_percent": 0,
+  "date_creation": "2023-03-30 21:34:40",
+  "links": [
+    {
+      "rel": "Entity",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Entity/0"
+    },
+    {
+      "rel": "User",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/User/2"
+    },
+    {
+      "rel": "User",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/User/2"
+    },
+    {
+      "rel": "RequestType",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/RequestType/1"
+    },
+    {
+      "rel": "Document_Item",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/Document_Item/"
+    },
+    {
+      "rel": "TicketTask",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/TicketTask/"
+    },
+    {
+      "rel": "TicketValidation",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/TicketValidation/"
+    },
+    {
+      "rel": "TicketCost",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/TicketCost/"
+    },
+    {
+      "rel": "Problem_Ticket",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/Problem_Ticket/"
+    },
+    {
+      "rel": "Change_Ticket",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/Change_Ticket/"
+    },
+    {
+      "rel": "Item_Ticket",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/Item_Ticket/"
+    },
+    {
+      "rel": "ITILSolution",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/ITILSolution/"
+    },
+    {
+      "rel": "ITILFollowup",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/ITILFollowup/"
+    },
+    {
+      "rel": "Ticket_User",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/Ticket_User/"
+    },
+    {
+      "rel": "Group_Ticket",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/Group_Ticket/"
+    },
+    {
+      "rel": "Supplier_Ticket",
+      "href": "http://localhost/glpi_10_0_6/apirest.php/Ticket/4/Supplier_Ticket/"
+    }
+  ]
+}
