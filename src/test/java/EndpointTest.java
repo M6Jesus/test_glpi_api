@@ -56,10 +56,11 @@ public class EndpointTest {
     public void TestKillSessionEndpoint_Should_restrieve200() throws IOException {
         String urlInit = url+  "/killSession/";
         URL urlInitSession = new URL(urlInit);
+        String sessionToken2 = glpiApiCall.getSessionToken();
         WebResponse response = glpiApiCall.sendHttpRequest(urlInitSession, HttpMethod.GET,
                 "9dCPK2HR6Hck118pXe9Kz6xHfh9vuVmF8NxRRMZW",
                 null,
-                sessionToken, null, null, null,
+                sessionToken2, null, null, null,
                 "application/json",
                 HttpURLConnection.HTTP_OK, null);
 
