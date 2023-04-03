@@ -1,0 +1,16 @@
+
+
+Status Code: 201 Created
+access-control-allow-origin: *
+cache-control: no-store, no-cache, must-revalidate
+connection: Keep-Alive
+content-length: 72
+content-type: application/json; charset=UTF-8
+date: Fri, 31 Mar 2023 08:24:47 GMT
+expires: Mon, 26 Jul 1997 05:00:00 GMT
+keep-alive: timeout=5, max=100
+location: http://localhost/glpi_10_0_6/apirest.php/Ticket/28
+pragma: no-cache
+server: Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0
+x-powered-by: PHP/8.2.0
+
