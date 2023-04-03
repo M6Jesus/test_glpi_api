@@ -2,6 +2,8 @@ import com.gargoylesoftware.htmlunit.WebResponse;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -12,6 +14,7 @@ import java.util.List;
 import static junit.framework.TestCase.*;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNotEquals;
+
 
 public class GlpiApiCallTest {
 

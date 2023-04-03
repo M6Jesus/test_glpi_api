@@ -1,5 +1,6 @@
 import java.io.IOException;
 
+
 public class ApplicationGLPI {
     public static void main(String[] args) throws IOException {
         GlpiApiCall glpiApiCall = new GlpiApiCall();
