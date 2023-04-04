@@ -45,7 +45,7 @@ public class EndpointTest {
          URL urlInitSession = new URL(urlInit);
          WebResponse response = glpiApiCall.sendHttpRequest(urlInitSession, HttpMethod.GET,
                  "9dCPK2HR6Hck118pXe9Kz6xHfh9vuVmF8NxRRMZW",
-                "ldCBa7mdyke7xdwEF7D68SLRuxjPIGkMacFwvy1O",
+                "pV0aKS5EZ9Jfp2gsjlj461xSWS6bSAqscc6fOjXn",//"ldCBa7mdyke7xdwEF7D68SLRuxjPIGkMacFwvy1O",
                 null, null, null, null,
                 "application/json",
                 HttpURLConnection.HTTP_OK, null);

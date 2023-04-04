@@ -26,7 +26,7 @@ public class TicketPage extends GlpiPageObject{
     }
     public TicketPage enterDate(){
         driver.findElement(By.cssSelector("i[role='button']")).click();
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("uuuu-MM-dd hh:mm:ss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("uuuu-MM-dd");
         driver.findElement(By.xpath("/html/body/div[5]/div[2]/div[2]/div[2]/div/span[26]['" + dtf.format(LocalDateTime.now()) + "']")).click();
         return this;
     }

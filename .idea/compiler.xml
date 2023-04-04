@@ -10,5 +10,8 @@
         <module name="GlpiApiJavaCallHtmlUnitMvn" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ISTQB_API" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

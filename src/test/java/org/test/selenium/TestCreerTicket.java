@@ -101,4 +101,35 @@ public class TestCreerTicket {
         this.ticketViewPage.validation();
         assertEquals("Résultat du test :", this.ticketViewPage.getExpectedUrl(), this.ticketViewPage.getCurrentUrl());
     }
+
+    @Test
+    public void e_creerTicketTest() throws InterruptedException {
+        this.password = "toto";
+        this.login ="RH_01";
+        this.homePage = login(this.login, this.password);
+        String titre = "test id al\u00E9atoire :"+Math.random();
+        String desc = "ma description";
+        this.ticketPage = this.homePage.createTicket();
+        this.homePage = creerTicket(titre, desc);
+        this.ticketListPage = this.homePage.clickTicket();
+        this.ticketViewPage = this.ticketListPage.chooseLastTicket();
+        Thread.sleep(10000);
+        String ticketViewTitre = this.ticketViewPage.ticketViewTitre();
+        String ticketViewDesc = this.ticketViewPage.ticketViewDesc();
+        assertEquals("TEST Titre",titre,ticketViewTitre);
+        assertEquals("TEST Desc",desc,ticketViewDesc);
+        assertEquals("TEST 3:", ticketViewPage.getExpectedUrl(), ticketViewPage.getCurrentUrl());
+    }
+    @Test
+    public void f_refusTest() throws InterruptedException {
+        this.password = "toto";
+        this.login ="MP_02";
+        this.homePage = login(this.login, this.password);
+        this.ticketListPage = this.homePage.clickTicket();
+        this.ticketViewPage = this.ticketListPage.chooseLastTicket();
+        Thread.sleep(15000);
+        this.ticketViewPage.validationDesc();
+        this.ticketViewPage.refus();
+        assertEquals("Résultat du test :", this.ticketViewPage.getExpectedUrl(), this.ticketViewPage.getCurrentUrl());
+    }
 }
