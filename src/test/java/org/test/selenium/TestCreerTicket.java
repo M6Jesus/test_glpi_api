@@ -65,7 +65,7 @@ public class TestCreerTicket {
     }
 
     @Test
-    public void Test_LoginKO(){
+    public void TestLoginKO(){
         this.password = "WRONG";
         this.login ="WRONG";
         this.homePage = login(this.login, this.password);

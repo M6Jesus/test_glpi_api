@@ -4,6 +4,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({EndpointTest.class, GlpiApiCallTest.class})
+@Suite.SuiteClasses({Endpoint.class, GlpiApiCallT.class})
 public class GlpiApiAll {
 }

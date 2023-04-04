@@ -4,8 +4,6 @@ import com.gargoylesoftware.htmlunit.WebResponse;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.*;
-import org.test.api.GlpiApiCall;
-import org.test.api.Ticket;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -18,7 +16,7 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNotEquals;
 
 
-public class GlpiApiCallTest {
+public class GlpiApiCallT {
 
     private static GlpiApiCall glpiApiCall;
     private static String sessionToken;

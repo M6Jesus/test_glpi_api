@@ -3,8 +3,6 @@ package org.test.api;
 import com.gargoylesoftware.htmlunit.HttpMethod;
 import com.gargoylesoftware.htmlunit.WebResponse;
 import org.junit.*;
-import org.test.api.GlpiApiCall;
-import org.test.api.Ticket;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -13,7 +11,7 @@ import java.net.URL;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
-public class EndpointTest {
+public class Endpoint {
     private static GlpiApiCall glpiApiCall;
     private static String sessionToken;
 
