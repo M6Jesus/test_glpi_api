@@ -57,7 +57,7 @@ public class TestCreerTicket {
         Optional.ofNullable(this.homePage).map(GlpiPageObject::close);
     }
     @Test
-    public void a_loginTest(){
+    public void TestLoginOK(){
         this.password = "toto";
         this.login ="RH_01";
         this.homePage = login(this.login, this.password);
@@ -65,7 +65,7 @@ public class TestCreerTicket {
     }
 
     @Test
-    public void b_wrongLoginTest(){
+    public void Test_LoginKO(){
         this.password = "WRONG";
         this.login ="WRONG";
         this.homePage = login(this.login, this.password);
