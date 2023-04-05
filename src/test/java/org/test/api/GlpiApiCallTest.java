@@ -16,7 +16,7 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNotEquals;
 
 
-public class GlpiApiCallT {
+public class GlpiApiCallTest {
 
     private static GlpiApiCall glpiApiCall;
     private static String sessionToken;
