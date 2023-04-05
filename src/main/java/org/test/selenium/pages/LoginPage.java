@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 public class LoginPage extends GlpiPageObject {
 
     private static String PAGE_URL = "http://pamelaanou.infinityfreeapp.com/glpi_10_0_6/index.php";
+    //private static String PAGE_URL = "http://localhost/glpi_10_0_6/index.php";
 
     public LoginPage(TestDriver driver) {
         super(driver, PAGE_URL);

@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 
 public class TicketPage extends GlpiPageObject{
     private static final String PAGE_URL = "http://pamelaanou.infinityfreeapp.com/glpi_10_0_6/front/ticket.form.php";
+    //private static final String PAGE_URL = "http://localhost/glpi_10_0_6/front/ticket.form.php";
 
     public TicketPage(TestDriver driver) {
         super(driver, PAGE_URL);

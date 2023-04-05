@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 public class TicketListPage extends GlpiPageObject{
 
     private static String PAGE_URL = "http://pamelaanou.infinityfreeapp.com/glpi_10_0_6/front/ticket.php";
+    //private static String PAGE_URL = "http://localhost/glpi_10_0_6/front/ticket.php";
     public TicketListPage(TestDriver driver) {
         super(driver, PAGE_URL);
     }

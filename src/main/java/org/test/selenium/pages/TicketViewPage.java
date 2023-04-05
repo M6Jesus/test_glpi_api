@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class TicketViewPage extends GlpiPageObject{
     static String page_url = "http://pamelaanou.infinityfreeapp.com/glpi_10_0_6/front/ticket.form.php?id=";
-
+    //static String page_url = "http://localhost/glpi_10_0_6/front/ticket.form.php?id=";
     public TicketViewPage(TestDriver driver, String id) {
         super(driver, page_url+id);
     }
