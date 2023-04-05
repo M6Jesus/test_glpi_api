@@ -11,7 +11,7 @@ import java.net.URL;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
-public class EndpointTest {
+public class Endpoint {
     private static GlpiApiCall glpiApiCall;
     private static String sessionToken;
 
